@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.indiaglitz.ImagePreview"
+        version=“1.3.6”>
+
+  <name>ImagePreview</name>
+	<description>Testing Plugin for Development</description>
+	<author>Arul</author>
+	<license>MIT</license>
+	<keywords>Testing</keywords>
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+
+  <asset src="www/imagepreview.js" target="js/imagepreview.js"/>
+
+  <js-module src="www/imagepreview.js" name="imagepreview">
+    <clobbers target="imagepreview" />
+  </js-module>
+
+  <platform name="ios">
+    
+    <config-file target="config.xml" parent="/widget">
+      <feature name="ImagePreview">
+        <param name="ios-package" value="ImagePreview" />
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/ImagePreview.h" target-dir="ImagePreviewPlugin"/>
+    <source-file src="src/ios/ImagePreview.m" target-dir="ImagePreviewPlugin"/>
+    
+    <header-file src="src/ios/AsyncImageView.h" target-dir="ImagePreviewPlugin"/>
+    <source-file src="src/ios/AsyncImageView.m" target-dir="ImagePreviewPlugin"/>
+    
+    <header-file src="src/ios/GallaryVC.h" target-dir="ImagePreviewPlugin"/>
+    <source-file src="src/ios/GallaryVC.m" target-dir="ImagePreviewPlugin"/>
+    <source-file src="src/ios/GallaryVC.xib" target-dir="ImagePreviewPlugin"/>
+    
+    <header-file src="src/ios/GallaryVC2.h" target-dir="ImagePreviewPlugin"/>
+    <source-file src="src/ios/GallaryVC2.m" target-dir="ImagePreviewPlugin"/>
+    <source-file src="src/ios/GallaryVC2.xib" target-dir="ImagePreviewPlugin"/>
+    
+    <header-file src="src/ios/zoomView.h" target-dir="ImagePreviewPlugin"/>
+    <source-file src="src/ios/zoomView.m" target-dir="ImagePreviewPlugin"/>
+    
+    
+    <header-file src="src/ios/ZoomingView.h" target-dir="ImagePreviewPlugin"/>
+    <source-file src="src/ios/ZoomingView.m" target-dir="ImagePreviewPlugin"/>
+    <source-file src="src/ios/ZoomingView.xib" target-dir="ImagePreviewPlugin"/>
+    
+    
+    
+
+    <source-file src="src/ios/1.jpg" target-dir="ImagePreviewPlugin"/>
+    <source-file src="src/ios/2.jpg" target-dir="ImagePreviewPlugin"/>
+    <source-file src="src/ios/3.jpg" target-dir="ImagePreviewPlugin"/>
+    <source-file src="src/ios/4.jpg" target-dir="ImagePreviewPlugin"/>
+    <source-file src="src/ios/5.jpg" target-dir="ImagePreviewPlugin"/>
+    <source-file src="src/ios/6.jpg" target-dir="ImagePreviewPlugin"/>
+    <source-file src="src/ios/7.jpg" target-dir="ImagePreviewPlugin"/>
+    <source-file src="src/ios/8.jpg" target-dir="ImagePreviewPlugin"/>
+    <source-file src="src/ios/9.jpg" target-dir="ImagePreviewPlugin"/>
+    
+    <source-file src="src/ios/close.png" target-dir="ImagePreviewPlugin"/>
+    <source-file src="src/ios/close@2x.png" target-dir="ImagePreviewPlugin"/>
+    <source-file src="src/ios/download.png" target-dir="ImagePreviewPlugin"/>
+    <source-file src="src/ios/download@2x.png" target-dir="ImagePreviewPlugin"/>
+    
+    
+
+    
+
+    
+  </platform>
+
+
+</plugin>
